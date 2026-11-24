@@ -1178,26 +1178,7 @@
                 Enter your details and your friend or family member’s contact info so we can credit your $100 reward once their return is completed.
             </p>
 
-            <form id="referral-form" data-web3form="true" action="https://api.web3forms.com/submit" method="POST"
-                <input type="hidden" name="access_key" value="2740b7ff-c848-476e-8355-e5feac055401">
-                <input type="hidden" name="form_type" value="$100 Referral Registration">
-                <div class="bg-obsidian-900 p-4 rounded-2xl border border-gold-400/25 space-y-3">
-                    <span class="block text-xs font-bold uppercase tracking-wider text-gold-200">Your Information (Referrer)</span>
-                    <input type="text" name="referrer_name" required placeholder="Your Full Name *" class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-800 border border-gold-400/30 text-sm text-ivory-50 placeholder-ivory-200/40 outline-none focus:border-gold-400">
-                    <input type="text" name="referrer_contact" required placeholder="Your Email or Phone *" class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-800 border border-gold-400/30 text-sm text-ivory-50 placeholder-ivory-200/40 outline-none focus:border-gold-400">
-                </div>
-
-                <div class="bg-obsidian-900 p-4 rounded-2xl border border-gold-400/25 space-y-3">
-                    <span class="block text-xs font-bold uppercase tracking-wider text-gold-200">Friend / Family Member Info</span>
-                    <input type="text" id="ref-friend-name" name="referred_friend_name" required placeholder="Friend's Full Name *" class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-800 border border-gold-400/30 text-sm text-ivory-50 placeholder-ivory-200/40 outline-none focus:border-gold-400">
-                    <input type="text" name="referred_friend_contact" required placeholder="Friend's Phone or Email *" class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-800 border border-gold-400/30 text-sm text-ivory-50 placeholder-ivory-200/40 outline-none focus:border-gold-400">
-                </div>
-
-                <button type="submit" class="w-full bg-gold-gradient text-obsidian-950 font-bold text-sm sm:text-base py-3.5 rounded-xl shadow-gold">
-                    Submit Referral Registration
-                </button>
-            </form>
-
+            
             <div id="referral-success" class="hidden mt-4 p-4 rounded-xl bg-obsidian-900 text-ivory-50 text-sm border border-gold-400">
                 <strong class="text-gold-200 block">Referral Registered!</strong>
                 Thank you for sharing KNA Legacy &amp; Co. Financial LLC. We will notify you once your referral qualifies!
@@ -1275,9 +1256,7 @@
          JAVASCRIPT INTERACTIVITY + WEB3FORMS SUBMISSION HANDLER
     ====================================================================== -->
     <script>
-        // Replace with your Web3Forms access key configured for Info@knalegacyco.com
-        const WEB3FORMS_ACCESS_KEY = 'b30cfd70-e40d-4885-987c-449d5d4588cd';
-
+        
         function showStatusNotice(title, message, isError = false) {
             const existingToast = document.getElementById('placeholder-toast');
             if (existingToast) existingToast.remove();
